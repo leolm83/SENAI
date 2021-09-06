@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    padding:0px;
+    margin:0px;
+}
+html{
+    font-size: 16px;
+}
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1,5rem;
+}
+p{
+    font-size: 0.8rem;
+}
+body{
+    max-width:100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:10vh 300vh 30vh;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+    background-color: red;
+}
+header{
+    grid-area: header;
+    background-color: greenyellow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header div,header h1,header h2{
+    width:33%;
+    border: solid red 1px;
+    text-align: center;
+}
+main{
+    grid-area: main;
+    background-color: hotpink;
+    
+}
+footer{
+    grid-area: footer;
+    background-color: indianred;
+}

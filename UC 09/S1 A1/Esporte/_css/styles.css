@@ -1,0 +1,15 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    width: 100vw;
+    background-color:#6E8894;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#CEEDDB
+}

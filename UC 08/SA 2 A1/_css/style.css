@@ -1,0 +1,16 @@
+th{
+    font-weight: normal;
+}
+.periodo{
+    font-weight: bold;
+}
+.btn{
+    color:white;
+    background-color: rgb(33, 156, 33);
+    border-color: rgb(33, 156, 33);
+}
+.btn:hover{
+    color:white;
+    background-color: rgb(62, 211, 62);
+    border-color: rgb(33, 156, 33);
+}

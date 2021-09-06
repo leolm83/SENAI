@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"  >
+   </head>
+   <body>
+      <button type="button" class="btn btn-primary">Calculo de Viagem</button>
+      <br>
+      <div class='alert alert-primary' role='alert'>
+         Orçamento
+      </div>
+      <script>
+         var botao= document.querySelector("button");
+         botao.addEventListener("click", Calculo );
+         
+         
+         function Calculo () {
+         let nome = prompt('Insira seu nome:');
+         let quantidadepassageiros = prompt('Insira a quantidade de passageiros:');
+         let valorviagem = prompt('Insira o valor da viagem:');
+         let resultado="Ocorreu um erro"
+         if((quantidadepassageiros && valorviagem) && typeof(Number(quantidadepassageiros))==typeof(5)&&typeof(Number(valorviagem))==typeof(5)){
+            resultado= quantidadepassageiros*valorviagem;
+         }
+         
+         let mensagem = "Orçamento <br>Nome do cliente: "+ nome + "<br>\n";
+         mensagem = mensagem + "Valor da Viagem: "+resultado;
+         
+         document.querySelector("div").innerHTML= mensagem;
+         
+         } 
+         
+      </script>
+   </body>
+</html>
